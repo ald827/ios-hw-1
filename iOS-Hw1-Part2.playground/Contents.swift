@@ -16,13 +16,21 @@ import UIKit
  1.5) استعمل if statement , اذا كانت المصفوفة تحتوي على بيتزا قم بطباعه "yumm Pizza🍕😋"
 
 */
+var favFoods = ["pasta", "burges", "kinder"]
+favFoods.append("pizza")
+print(favFoods[0])
 
-
-
-
+for favFoods in favFoods {
+    print("yumm pizza")
+    if favFoods == "pizza" {
+        print("")
+    }
+    
+}
 
 //: # 2️⃣  السؤال الثاني
 var numbers = [1,2,3,4,5,6,7,8,9,10]
+
 /*:
 
 ##
@@ -38,7 +46,12 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
  ملاحظة: معادله الرقم الزوجي number % 2 == 0
 
 */
-
+var evenNumbers : [Int] = []
+for evenNumber in numbers {
+    if evenNumber % 2 == 0 {
+        evenNumbers.append(evenNumber)
+    }
+}
 //: # 3️⃣  السؤال الثالث
 /*:
 ##
@@ -56,4 +69,18 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
 
  
  */
-   
+
+for x in 1...5{
+    for y in 1...10{
+        print("\(x) x \(y) = \(x*y)")
+    }
+    print("")
+}
+
+
+
+for x in 1...7{
+print("*************")
+
+}
+ 
